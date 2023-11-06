@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  web:
+    build: .  # baca dari Dockerfile
+    container_name: contbaru
+    ports:
+      - '7001:3000'
+    # volumes:
+    #   - ./:/app
+    #   - ./app/node_modules
+    stdin_open: true
+    tty: true
+    
+
+    # image: nginx:alpine
+    # ports:
+    #   - 3000:3000
+    # volumes:
+    #   - ./build:/usr/share/nginx/html
